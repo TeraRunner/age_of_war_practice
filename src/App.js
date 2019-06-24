@@ -19,11 +19,10 @@ class App extends Component {
   }
 
   newRoll() {
-    const newTotal = [];
     for (let i = 0; i < this.dicesToThrow; i++) {
       this.dicesTotal.push(this.newRoll);
     }
-    this.setState({dicesTotal: newTotal});
+    return this.state.dicesTotal;
   }
 
   endTurn() {
